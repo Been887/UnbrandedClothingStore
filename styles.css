@@ -43,12 +43,13 @@ body {
 
 .content {
     top: 0;
-    margin: 0;
+    margin-top: 8vh;
     padding: 0;
     border: 0;
 }
 
 .dropdown {
+    top: 4vh;
      display: none; /* Initially hidden */
      position: absolute; /* Absolute positioning */
      padding: 10px;
@@ -61,10 +62,15 @@ body {
 
 .topbarelement:hover .dropdown {
     display: grid; /* Show dropdown */
-    color: rgb(50, 50, 50); 
+    color: rgb(50, 50, 50);
+}
+.topbarelement:hover .dropdown a {
+    display: block; /* Show dropdown spans */
+    color: rgb(50, 50, 50);
 }
 
-.dropdown span {
+.dropdown a {
+    text-decoration: none;
     margin: 0;
     border: 0;
     padding: 2px;
